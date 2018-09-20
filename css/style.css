@@ -1,0 +1,90 @@
+/* VARIABLES */
+/* #BASE CSS (Initital Setup)
+---------------------------------
+    #BASE START
+        #HTML5
+    #BASE CONTENT
+        #TYPOGRAPHY
+            #BODY
+            #HEADINGS
+            #PARAGRAPHS
+            #LINKS
+            #HELPERS
+--------------------------------- */
+/* #TYPOGRAPHY  */
+body {
+  font-family: monospace;
+  font-size: 10pt; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: georgia;
+  margin: 0 0 .5em 0; }
+
+/* #HEADINGS
+      Based on a Traditional Typographic Scale
+      48, 36, 24, 21, 18, 16 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: georgia;
+  margin: .5em 0; }
+
+h1 {
+  font-size: 3em;
+  /* 48px / 16px = 3em */
+  line-height: 1em; }
+
+h2 {
+  font-size: 2.25em;
+  /* 36px / 16px = 2.25em */
+  line-height: 1.1em; }
+
+h3 {
+  font-size: 1.5em;
+  /* 24px / 16px = 1.5em */
+  line-height: 1.2em; }
+
+h4 {
+  font-size: 1.3125em;
+  /* 21px / 16px = 1.3125em */
+  line-height: 1.3em; }
+
+h5 {
+  font-size: 1.125em;
+  /* 18px / 16px = 1.125em */
+  line-height: 1.4em; }
+
+h6 {
+  font-size: 1em;
+  /* 16px / 16px = 1em */
+  line-height: 1.5em; }
+
+p {
+  margin: 0 0 0.5em 0;
+  max-width: 38em; }
+
+em {
+  font-family: monospace; }
+
+strong {
+  font-family: monospace; }
+
+/* Horizontal Rule */
+hr {
+  border: 0;
+  height: 1px;
+  margin: 3em 0;
+  background: #ccc; }
+
+/* HELPERS */
+.headline {
+  font-size: 4em;
+  color: #9d97be; }
+
+.subheader {
+  font-size: 2.5em;
+  color: rgba(0, 0, 0, 0.2);
+  margin: 0.25em 0 0.5em 0; }
+
+.meta {
+  font-size: .875em;
+  color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5em; }

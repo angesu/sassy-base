@@ -1,0 +1,14 @@
+/* VARIABLES */
+$color-background: rgb(228, 228, 255);
+$type-base: monospace;
+$type-heading: georgia;
+$type-linewidth: 38em;
+$type-color-body: #888;
+$type-color-headings: rgb(101, 94, 134);
+$type-color-lightgrey: rgba(0, 0, 0, .2);
+
+// COLOR 
+$accent-color: #a6a5c7;
+
+@import "partials/toc";
+@import "partials/typography";
