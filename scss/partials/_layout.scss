@@ -1,0 +1,23 @@
+/* #LAYOUT  */
+
+* {box-sizing: border-box;}
+
+.container {
+  width: 100%;
+}
+
+@media (max-width:$breakpoint-small) {
+  /* SMALL- MEDIA QUERY */
+  body { background: #aaaaaa); }
+}
+
+@media (min-width:$breakpoint-medium) {
+  /* MEDIUM+ MEDIA QUERY */
+  body { background: #ccc; }
+}
+
+@media (min-width:$breakpoint-large) {
+  /* LARGE+ MEDIA QUERY */
+  body { background: #fff; 
+  font-size: 100%;
+  /* 16px; */ }
