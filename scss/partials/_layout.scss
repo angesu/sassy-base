@@ -3,21 +3,65 @@
 * {box-sizing: border-box;}
 
 .container {
-  width: 100%;
+  width: 92%;
+  padding: 0 4%;
+  margin: 0 auto;
 }
 
-@media (max-width:$breakpoint-small) {
-  /* SMALL- MEDIA QUERY */
-  body { background: #aaaaaa); }
+//MED SCREENS (tablet)
+@media (min-width: $breakpoint-small) {
+
+body{
+    font-size: 100%; /* 16 px */
+}
+    .container {
+        background: $color-background;
+    }
+} 
+
+//LARGE SCREENS (notebooks) 
+@media (min-width: $breakpoint-medium) {
+    .container {
+        background: $color-background;
+        max-width: $breakpoint-large - 50;
+        padding: 0 50px;
+    }
 }
 
-@media (min-width:$breakpoint-medium) {
-  /* MEDIUM+ MEDIA QUERY */
-  body { background: #ccc; }
+//EXTRA LARGE SCREENS (desktop)
+@media (min-width: $breakpoint-large) {
+    body{
+        font-size: 112.5%; /* 18 px */
+    }
+    .container {
+        background: $color-background;
+        max-width: $breakpoint-large - 50;
+    }
+} 
+
+/* Grid */
+
+$grid-column-gap: 1%;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$grid-column-gap;
+    margin-right: -$grid-column-gap;
+    justify-content: center;
+    align-content: center;
+
 }
 
-@media (min-width:$breakpoint-large) {
-  /* LARGE+ MEDIA QUERY */
-  body { background: #fff; 
-  font-size: 100%;
-  /* 16px; */ }
+.row .column{
+    flex-grow: 1;
+    flex-basis: 11em;
+    margin: 0 $grid-column-gap $grid-column-gap*2 -$grid-column-gap;
+}
+
+//FOR DEMON PURPOSES
+.demo .column {
+    padding: 1em;
+    background: #cccccc;
+    text-align: center;
+}
